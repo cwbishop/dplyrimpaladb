@@ -459,7 +459,7 @@ tbl.src_impaladb <- function(src, from, ...) {
 }
 
 #' @export
-src_translate_env.src_impaladb <- function(x) {
+sql_translate_env.src_impaladb <- function(x) {
   sql_variant(
     base_scalar,
     sql_translator(.parent = base_agg,
